@@ -1,0 +1,232 @@
+\documentclass[11pt, letterpaper]{article}
+
+\usepackage[reals]{layout} %provide \layout macro to show current page layout
+
+\usepackage{enumitem}
+
+\usepackage{tabulary}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+\usepackage{wrapfig}
+
+\usepackage{amsmath}            % more evironment
+\usepackage{amssymb}            % more symbol
+
+\usepackage{ifpdf}
+\ifpdf
+\usepackage{epstopdf} % must be put after graphicx
+\usepackage[usenames,dvipsnames]{color}
+\usepackage[pdftex,bookmarks=true]{hyperref}
+\hypersetup{
+  pdfauthor = {Jing Liu},
+  pdftitle = {Syllabus for USD courses},
+  pdfsubject = {Physics},
+  pdfkeywords = {nuclear,particle},
+}
+\pdfadjustspacing=1 %force pdfLaTeX to use the same spacing as LaTeX
+\else
+\usepackage[usenames,dvips]{color}
+\usepackage[ps2pdf]{hyperref}
+\fi
+
+\setlength{\oddsidemargin}{0.8cm}
+\setlength{\evensidemargin}{0cm}
+\setlength{\textwidth}{15cm}
+\setlength{\textheight}{21cm}
+\setlength{\hoffset}{0cm}
+\setlength{\voffset}{0cm}
+
+% Alter some LaTeX defaults for better treatment of floats: See p.105 % of "TeX Unbound" for suggested values. See pp. 199-200 of Lamport's % "LaTeX" book for details.
+
+% General parameters, for ALL pages:
+\renewcommand{\topfraction}{0.9} % max fraction of floats at top
+\renewcommand{\bottomfraction}{0.9} % max fraction of floats at bottom
+
+% Parameters for TEXT pages (not float pages):
+\setcounter{topnumber}{2}
+\setcounter{bottomnumber}{2}
+\setcounter{totalnumber}{4} % 2 may work better
+\renewcommand{\textfraction}{0.1} % allow minimal text w. figs
+
+% Parameters for FLOAT pages (not text pages):
+\renewcommand{\floatpagefraction}{0.7}	% require fuller float pages
+% N.B.: floatpagefraction MUST be less than topfraction !!
+
+% remember to use [htp] or [htpb] for placement
+%\pagestyle{headings}
+
+
+\begin{document}
+
+% -------------------------------------------------------- 
+% title 
+% -------------------------------------------------------- 
+\begin{figure}[t!]\centering
+  \includegraphics[width=0.2\textwidth]{usd.logo.eps}\hfil
+  \begin{minipage}[b]{0.75\linewidth}\centering
+    \rule[-4.2mm]{\textwidth}{0.3mm}\\\rule{0.98\textwidth}{0.1mm}\\
+    GERDA Scientific/Technical Report Munich\\\vspace{2mm}
+    GSTR-yy-Mnum \\\vspace{2mm}
+    Created: February 12, 2009\\\vspace{-7.5mm}
+    \rule[-5mm]{0.98\textwidth}{0.1mm}\\\rule{\textwidth}{0.3mm}\\
+  \end{minipage}%
+\end{figure}
+
+\section{Page layout}
+\label{sec:manual}
+
+\layout
+
+\section{Course Description}
+\label{s:desc}
+
+\subsection{Catalog Description}
+\label{ss:cata}
+
+This is a one-semester course in nuclear and elementary particle physics.  
+Nuclear physics topics may include nuclear structure (nuclear form factors, 
+multipole moments, liquid and shell models); nuclear decay; nuclear reactions; 
+and other topics of interest.  Elementary particle physics topics may include 
+the role of symmetry in particle physics, Quantum Electrodynamics and Quantum 
+Chromodynamics; the Standard Model of Particle Physics; Strong and Weak 
+interactions; Accelerator and Experimental Particle Physics; and other selected 
+topics beyond the Standard Model.
+
+\subsection{Additional Description}
+\label{ss:addi}
+
+
+\subsection{Description of Instructional Methods}
+\label{ss:meth}
+
+
+\subsection{Required Textbooks and Other Materials}
+\label{ss:text}
+
+There is no required textbook. However, the following references are 
+recommended:
+
+\begin{enumerate}[label=\arabic*]
+\item Glenn F Knoll, Radiation Detection and Measurement, 3rd edition, John 
+  Wiley \& Sons, Inc.(1999)
+\item 
+  \href{https://www.hamamatsu.com/resources/pdf/etd/PMT_handbook_v3aE.pdf}{Hamamatsu, 
+  Photomultiplier Tubes – Basics and Applications, 3rd edition}
+\item Helmuth Spieler, Introduction to Radiation Detectors and Electronics, 
+  \href{http://www-physics.lbl.gov/~spieler/physics_198_notes/}{Lecture Notes}- 
+  Physics 198, Spring Semester 1998, UC Berkeley
+\end{enumerate}
+
+\subsection{Class Attendance Policy}
+\label{ss:atte}
+
+An absence without explanation will prevent the student to get an A. Frequent 
+absence will lead to a drop-off from the class.
+
+\subsection{Course Goals}
+\label{ss:goal}
+
+
+\section{Evaluation Procedures}
+\label{s:eval}
+
+\subsection{Assessment}
+\label{s:asse}
+
+\subsection{Requirement on Homework}
+\label{s:home}
+
+
+\subsection{Performance standards/grading policy}
+\label{s:grad}
+
+There are 100 points in total, 70 for the lab activities and logs, 30 for the
+final exam.
+
+\begin{table} [htbp]
+  \centering
+  \label{t:grad}
+  \begin{tabulary}{\linewidth}{r|l}\hline
+    Grading & Percentage \\\hline
+    A & 90-100\%\\
+    B & 80-90\%\\
+    C & 70-80\%\\
+    D & 60-70\%\\
+    F & $<60$\%\\
+  \hline
+  \end{tabulary}
+\end{table}
+
+
+\section{Academic Integrity}
+\label{s:inte}
+
+The College of Arts and Sciences considers plagiarism, cheating, and other
+forms of academic dishonesty inimical to the objectives of higher education.
+The College supports the imposition of penalties on students who engage in
+academic dishonesty, as defined in the “Conduct” section of the University of
+South Dakota Student Handbook.
+
+No credit can be given for a dishonest assignment. A student found to have
+engaged in any form of academic dishonesty may, at the discretion of the
+instructor, be:
+
+\begin{enumerate}[label=\textbf{\alph*.}, leftmargin=2cm]
+\item Given a zero for that assignment.
+\item Allowed to rewrite and resubmit the assignment for credit.
+\item Assigned a reduced grade for the course.
+\item Dropped from the course.
+\item Failed in the course.
+\end{enumerate}
+
+\section{Disability Accommodation}
+\label{s:disa}
+
+Any student who feels s/he may need academic accommodations or access
+accommodations based on the impact of a documented disability should contact
+and register with Disability Services during the first week of class or as soon
+as possible after the diagnosis of a disability.  Disability Services is the
+official office to assist students through the process of disability
+verification and coordination of appropriate and reasonable accommodations.
+Students currently registered with Disability Services must obtain a new
+accommodation memo each semester. 
+
+Please note: if your home institution is not the University of South Dakota but
+one of the other South Dakota Board of Regents institutions (e.g., SDSU, SDSMT,
+BHSU, NSU, DSU), you should work with the disability services coordinator at
+your home institution.
+
+\vspace{0.5cm}
+\begin{minipage}[b]{0.75\linewidth}
+\rule{\textwidth}{0.1mm}\\
+Ernetta L. Fox, Director\\
+Disability Services, Room 119 Service Center\\
+(605) 677-6389\\
+Web Site: \href{http://www.usd.edu/ds}{www.usd.edu/ds}\\
+E-mail: \href{mailto:disabilityservices@usd.edu}{disabilityservices@usd.edu}\\
+\rule{\textwidth}{0.1mm}
+\end{minipage}
+
+\section{Freedom in Learning}
+\label{s:free}
+
+Under Board of Regents and University policy student academic performance may
+be evaluated solely on an academic basis, not on opinions or conduct in matters
+unrelated to academic standards. Students should be free to take reasoned
+exception to the data or views offered in any course of study and to reserve
+judgment about matters of opinion, but they are responsible for learning the
+content of any course of study for which they are enrolled. Students who
+believe that an academic evaluation reflects prejudiced or capricious
+consideration of student opinions or conduct unrelated to academic standards
+should contact the dean of the college or school that offers the class to
+initiate a review of the evaluation.
+
+\section{Diversity and Inclusive Excellence}
+\label{s:dive}
+
+The University of South Dakota strives to foster a globally inclusive learning
+environment where opportunities are provided for diversity to be recognized and
+respected.
+
+\end{document}
